@@ -28,3 +28,14 @@ def zones_karvonen(hr, hr_max, rhr):
     else:
         return 5
 
+# Labeling the Training Zone
+def zone_label(zone):
+    labels = {
+        1: "Warm-Up",
+        2: "Endurance/Aerobic",
+        3: "Moderate/Cardio",
+        4: "Redline",
+        5: "Peak/Anaerobic"
+    }
+    return labels.get(zone, "Unknown")
+
